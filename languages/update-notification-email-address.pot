@@ -1,0 +1,67 @@
+# Copyright (C) 2014 Background Update Notification Email Address
+# This file is distributed under the same license as the Background Update Notification Email Address package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Background Update Notification Email Address 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/update-"
+"notification-email-address\n"
+"POT-Creation-Date: 2014-02-18 13:56:15+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. #-#-#-#-#  update-notification-email-address.pot (Background Update Notification Email Address 1.0.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/class-update-notification-email-address-admin.php:93
+msgid "Background Update Notification Email Address"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:94
+msgid "Update Notifications"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:111
+msgid "Settings"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:154
+msgid "Email Settings"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:161
+msgid "Email Address"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:212
+msgid "An email address is required"
+msgstr ""
+
+#: admin/class-update-notification-email-address-admin.php:215
+msgid "A valid email address is required"
+msgstr ""
+
+#: admin/views/admin.php:24
+msgid "Save Changes"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://github.com/iwebsolutions/background-update-notification-email-address"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Change the email address update notifications are sent to following an "
+"automatic background update."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Interactive Web Solutions Ltd"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.iwebsolutions.co.uk/"
+msgstr ""

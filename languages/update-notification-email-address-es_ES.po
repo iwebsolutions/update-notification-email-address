@@ -1,0 +1,72 @@
+# Copyright (C) 2014 Background Update Notification Email Address
+# This file is distributed under the same license as the Background Update Notification Email Address package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Background Update Notification Email Address 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/update-"
+"notification-email-address\n"
+"POT-Creation-Date: 2014-02-18 13:56:15+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-02-18 17:15-0000\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+#. Plugin Name of the plugin/theme
+#: admin/class-update-notification-email-address-admin.php:93
+msgid "Background Update Notification Email Address"
+msgstr ""
+"Correo electrónico para las actualizaciones automáticas en segundo plano"
+
+#: admin/class-update-notification-email-address-admin.php:94
+msgid "Update Notifications"
+msgstr "Actualizar notificaciones"
+
+#: admin/class-update-notification-email-address-admin.php:111
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/class-update-notification-email-address-admin.php:154
+msgid "Email Settings"
+msgstr "Ajustes del correo electrónico"
+
+#: admin/class-update-notification-email-address-admin.php:161
+msgid "Email Address"
+msgstr "Correo electrónico"
+
+#: admin/class-update-notification-email-address-admin.php:212
+msgid "An email address is required"
+msgstr "Un correo electrónico es necesario"
+
+#: admin/class-update-notification-email-address-admin.php:215
+msgid "A valid email address is required"
+msgstr "Un correo electrónico válido es necesario"
+
+#: admin/views/admin.php:24
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://github.com/iwebsolutions/background-update-notification-email-address"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Change the email address update notifications are sent to following an "
+"automatic background update."
+msgstr ""
+"Cambia la dirección de correo electrónico usada en el correo de notificación "
+"de las actualizaciones automáticas."
+
+#. Author of the plugin/theme
+msgid "Interactive Web Solutions Ltd"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.iwebsolutions.co.uk/"
+msgstr ""
