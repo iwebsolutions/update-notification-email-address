@@ -52,7 +52,7 @@ msgstr "Guardar cambios"
 
 #. Plugin URI of the plugin/theme
 msgid ""
-"https://github.com/iwebsolutions/background-update-notification-email-address"
+"https://github.com/iwebsolutions/update-notification-email-address"
 msgstr ""
 
 #. Description of the plugin/theme

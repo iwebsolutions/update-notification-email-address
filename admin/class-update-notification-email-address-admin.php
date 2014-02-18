@@ -5,7 +5,7 @@
  * @package Background_Update_Notification_Email_Address_Admin
  * @author Phil Wylie <phil@iweb.co.uk>
  * @license GPL-2.0+
- * @link https://github.com/iwebsolutions/background-update-notification-email-address
+ * @link https://github.com/iwebsolutions/update-notification-email-address
  * @copyright 2014 Interactive Web Solutions Ltd
  */
 
