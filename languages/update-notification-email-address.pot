@@ -49,7 +49,7 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 msgid ""
-"https://github.com/iwebsolutions/update-notification-email-address"
+"http://wordpress.org/plugins/background-update-notification-email-address/"
 msgstr ""
 
 #. Description of the plugin/theme

@@ -8,12 +8,12 @@
  * @package Background_Update_Notification_Email_Address
  * @author Phil Wylie <phil@iweb.co.uk>
  * @license GPL-2.0+
- * @link https://github.com/iwebsolutions/update-notification-email-address
+ * @link http://wordpress.org/plugins/background-update-notification-email-address/
  * @copyright 2014 Interactive Web Solutions Ltd
  *
  * @wordpress-plugin
  * Plugin Name: Background Update Notification Email Address
- * Plugin URI: https://github.com/iwebsolutions/update-notification-email-address
+ * Plugin URI: http://wordpress.org/plugins/background-update-notification-email-address/
  * Description: Change the email address update notifications are sent to following an automatic background update.
  * Version: 1.0.0
  * Author: Interactive Web Solutions Ltd
