@@ -28,20 +28,11 @@ We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
 
-= Uploading in WordPress Dashboard =
-
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Navigate to the 'Upload' area
-3. Select `update-notification-email-address.zip` from your computer
-4. Click 'Install Now'
-5. Activate the plugin in the Plugin dashboard
-
 = Using FTP =
 
-1. Download `update-notification-email-address.zip`
-2. Extract the `update-notification-email-address` directory to your computer
-3. Upload the `update-notification-email-address` directory to the `/wp-content/plugins/` directory
-4. Activate the plugin in the Plugin dashboard
+1. Download and extract the plugin
+2. Upload the `background-update-notification-email-address` folder to the `/wp-content/plugins/` directory.
+3. Activate the plugin in the Plugin dashboard
 
 == Screenshots ==
 
