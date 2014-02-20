@@ -57,7 +57,7 @@ class Background_Update_Notification_Email_Address {
 	 */
 	private function __construct() {
 
-		// Load plugin text domain
+		// Load plugin text domain.
 		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
 		// Filter the background update notification email.
