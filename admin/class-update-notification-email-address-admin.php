@@ -135,6 +135,11 @@ class Background_Update_Notification_Email_Address_Admin {
 		// Get existing options.
 		$option_values = get_option( $option_name );
 
+		// Prepare option if it does't exist.
+		if ( false == $option_values ) {
+			add_option( $option_name );
+		}
+
 		// Set default values.
 		$default_values = array(
 			'email' => get_bloginfo( 'admin_email' ),
