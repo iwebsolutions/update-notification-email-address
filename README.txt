@@ -27,12 +27,14 @@ We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-
 2. Search for 'Background Update Notification Email Address'
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
+5. Set email address under Settings > Update Notifications
 
 = Using FTP =
 
 1. Download and extract the plugin
 2. Upload the `background-update-notification-email-address` folder to the `/wp-content/plugins/` directory.
 3. Activate the plugin in the Plugin dashboard
+4. Set email address under Settings > Update Notifications
 
 == Screenshots ==
 
