@@ -37,7 +37,8 @@ class Background_Update_Notification_Email_Address_Admin {
 	protected $plugin_screen_hook_suffix = null;
 
 	/**
-	 * Initialize the plugin by adding a settings page and menu.
+	 * Initialize the plugin by setting localization, adding a settings page
+	 * and menu.
 	 *
 	 * @since 1.0.0
 	 *
@@ -49,6 +50,9 @@ class Background_Update_Notification_Email_Address_Admin {
 		// Call $plugin_slug from public plugin class.
 		$plugin = Background_Update_Notification_Email_Address::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
+
+		// Load plugin text domain.
+		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
 		// Add the options page and menu item.
 		add_action( 'admin_menu', array( $this, 'add_plugin_admin_menu' ) );
@@ -79,6 +83,21 @@ class Background_Update_Notification_Email_Address_Admin {
 		}
 
 		return self::$instance;
+	}
+
+	/**
+	 * Load the plugin text domain for translation.
+	 *
+	 * @since 1.0.0
+	 */
+	public function load_plugin_textdomain() {
+
+		$domain = $this->plugin_slug;
+		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+
+		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
+		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
+
 	}
 
 	/**

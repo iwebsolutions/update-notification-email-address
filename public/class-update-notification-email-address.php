@@ -50,15 +50,11 @@ class Background_Update_Notification_Email_Address {
 	protected static $instance = null;
 
 	/**
-	 * Initialize the plugin by setting localization and loading public scripts
-	 * and styles.
+	 * Initialize the plugin by hooking our function to auto_core_update_email.
 	 *
 	 * @since 1.0.0
 	 */
 	private function __construct() {
-
-		// Load plugin text domain.
-		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 
 		// Filter the background update notification email.
 		add_filter( 'auto_core_update_email', array( $this, 'filter_auto_core_update_email' ), 1 );
@@ -91,21 +87,6 @@ class Background_Update_Notification_Email_Address {
 		}
 
 		return self::$instance;
-	}
-
-	/**
-	 * Load the plugin text domain for translation.
-	 *
-	 * @since 1.0.0
-	 */
-	public function load_plugin_textdomain() {
-
-		$domain = $this->plugin_slug;
-		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
-
-		load_textdomain( $domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo' );
-		load_plugin_textdomain( $domain, FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
-
 	}
 
 	/**
