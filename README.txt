@@ -3,7 +3,7 @@ Contributors: iwebsolutions, mustardbees, lauravaq
 Tags: admin, manage, plugin, updates, background updates, automatic updates
 Requires at least: 3.7
 Tested up to: 3.8.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-
 1. Settings page.
 
 == Changelog ==
+
+= 1.0.3 =
+* Move localisation functions to admin file as there are no public facing strings.
 
 = 1.0.2 =
 * Prepare option if it does't exist.
