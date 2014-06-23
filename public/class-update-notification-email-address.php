@@ -103,7 +103,7 @@ class Background_Update_Notification_Email_Address {
 		$options = get_option( 'update_notification_email_address_options' );
 
 		// If an email address has been set, override the WordPress default.
-		if ( isset( $options['email'] ) && is_email( $options['email'] ) ) {
+		if ( isset( $options['email'] ) && ! empty( $options['email'] ) ) {
 			$email['to'] = $options['email'];
 		}
 

@@ -156,7 +156,7 @@ class Background_Update_Notification_Email_Address_Admin {
 
 		// Set default values.
 		$default_values = array(
-			'email' => get_bloginfo( 'admin_email' ),
+			'email' => array( get_bloginfo( 'admin_email' ) ),
 		);
 
 		// Parse option values and discard the rest.
@@ -189,9 +189,9 @@ class Background_Update_Notification_Email_Address_Admin {
 			array(
 				'label_for' => 'email',
 				'name' => 'email',
-				'value' => esc_attr( $data['email'] ),
+				'value' => esc_attr( implode( ', ',  $data['email'] ) ),
 				'option_name' => $option_name,
-				'type' => 'email'
+				'type' => 'text'
 			)
 		);
 
@@ -229,16 +229,23 @@ class Background_Update_Notification_Email_Address_Admin {
 		if ( isset( $input['submit'] ) ) {
 
 			// Get fields.
-			$email = isset( $input['email'] ) ? $input['email'] : '';
+			$email = isset( $input['email'] ) ? trim( $input['email'] ) : '';
 
 			// Validate fields.
 			if ( empty( $email ) ) {
 				add_settings_error( 'email', 'email_error', __( 'An email address is required', $this->plugin_slug ), 'error' );
 			} else {
-				if ( ! is_email( $email ) ) {
-					add_settings_error( 'email', 'email_error', __( 'A valid email address is required', $this->plugin_slug ), 'error' );
-				} else {
-					$options['email'] = sanitize_email( $email );
+				$email_addresses = array_filter( array_map( 'trim', explode( ',', $email ) ) );
+				foreach ( $email_addresses as $email_address ) {
+					if ( ! is_email( $email_address ) ) {
+						add_settings_error( 'email', 'email_error', __( 'A valid email address is required', $this->plugin_slug ), 'error' );
+						break;
+					}
+				}
+
+				$settings_errors = get_settings_errors( 'email' );
+				if ( empty( $settings_errors ) ) {
+					$options['email'] = $email_addresses;
 				}
 			}
 
