@@ -189,7 +189,7 @@ class Background_Update_Notification_Email_Address_Admin {
 			array(
 				'label_for' => 'email',
 				'name' => 'email',
-				'value' => esc_attr( implode( ', ',  $data['email'] ) ),
+				'value' => is_array( $data['email'] ) ? esc_attr( implode( ', ',  $data['email'] ) ) : esc_attr( $data['email'] ),
 				'option_name' => $option_name,
 				'type' => 'text'
 			)
