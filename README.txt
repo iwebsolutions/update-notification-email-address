@@ -2,8 +2,8 @@
 Contributors: iwebsolutions, mustardbees, lauravaq
 Tags: admin, manage, plugin, updates, background updates, automatic updates
 Requires at least: 3.7
-Tested up to: 3.8.1
-Stable tag: 1.0.3
+Tested up to: 3.9.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,9 @@ Automatic background updates were introduced in WordPress 3.7. An email notifica
 
 This plugin is ideal for those who manage WordPress on their clients behalf. The client carries on receiving WordPress emails as before, with automatic background update notifications being redirected to the developers email address specified in this plugins settings.
 
-We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-wordpress-auto-update-email-address/) following the release of WordPress 3.7.1. This plugin provides a simple interface for setting the email address without having to touch code. **Once installed, navigate to Settings > Update Notifications. From here you can set the email address where background update notifications should be sent to.**
+We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-wordpress-auto-update-email-address/) following the release of WordPress 3.7.1. This plugin provides a simple interface for setting the email address without having to touch code.
+
+**Once installed, navigate to Settings > Update Notifications. From here you can set the email address where background update notifications should be sent to. Background update notifications can be sent to multiple recipients by entering a comma-separated list of email addresses.**
 
 == Installation ==
 
@@ -41,6 +43,11 @@ We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-
 1. Settings page.
 
 == Changelog ==
+
+= 1.1.0 =
+* Add multiple email address support. You can now enter a comma-separated list of email addresses.
+* Save default value when we prepare the option.
+* Delete settings when the plugin is uninstalled.
 
 = 1.0.3 =
 * Move localisation functions to admin file as there are no public facing strings.

@@ -25,7 +25,7 @@ class Background_Update_Notification_Email_Address {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.3';
+	const VERSION = '1.1.0';
 
 	/**
 	 * Unique identifier for your plugin.
