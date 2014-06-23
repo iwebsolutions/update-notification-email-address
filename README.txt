@@ -3,7 +3,7 @@ Contributors: iwebsolutions, mustardbees, lauravaq
 Tags: admin, manage, plugin, updates, background updates, automatic updates
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ We originally [published a solution](http://www.iwebsolutions.co.uk/blog/change-
 1. Settings page.
 
 == Changelog ==
+
+= 1.1.1 =
+* Maintain backwards compatibility with previous option format, accept either a string or array of email addresses.
 
 = 1.1.0 =
 * Add multiple email address support. You can now enter a comma-separated list of email addresses.
